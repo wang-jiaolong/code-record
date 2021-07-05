@@ -2,10 +2,10 @@
 name: Jiaolong 's Record
 email: iwangjiaolong@163.com
 author: Jiaolong
-url: http://record.jiaolong.space
-resume_site: http://record.jiaolong.space
+url:  code.jiaolong.space
+resume_site: code.jiaolong.space
 github: https://github.com/Wang-Jiaolong
-baseurl: "/LessOrMore"
+baseurl: code.jiaolong.space
 description: Actually, less is more!
 meta_description: Jiaolong;简单记录刷题历程
 motto: Stay hungry , stay foolish . 
