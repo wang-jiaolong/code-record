@@ -17,7 +17,7 @@ layout: default
                   {% if forloop.first %}
                     <li><a href="#year_{{this_year}}">{{this_year}}</a>
                       <ul class="nav">
-                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}({{ this_month.size }})</a></li>
+                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
                   {% endif %}
                   {% if forloop.last %}
                         </ul>
@@ -52,7 +52,7 @@ layout: default
 
                   {% if forloop.first %}
                     <h1 id="year_{{this_year}}">{{this_year}}</h1>
-                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h2>
+                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}({{ this_month.size }})</h2>
                     <ul style="padding-left: 0px;">
                   {% endif %}
 
