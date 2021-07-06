@@ -65,12 +65,12 @@ layout: default
                     {% if this_year != next_year %}
                       </ul>
                       <h1 id="year_{{next_year}}">{{next_year}}</h1>
-                      <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
+                      <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}({{ next_month.size }})</h2>
                       <ul style="padding-left: 0px;">
                     {% else %}    
                       {% if this_month != next_month %}
                         </ul>
-                        <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
+                        <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}({{ next_month.size }})</h2>
                         <ul style="padding-left: 0px;">
                       {% endif %}
                     {% endif %}
