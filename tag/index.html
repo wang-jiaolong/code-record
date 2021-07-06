@@ -30,7 +30,7 @@ header: Posts By Tag
           <div class="home">
 
           	{% for tag in site.tags %} 
-			  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+			  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}<span style="color: #929191;font-size: 25px">({{ tag[1].size }})</span></h2>
 			  <ul style="padding-left: 0px;">
 			    {% assign pages_list = tag[1] %}  
 			    {% include LessOrMore/pages_list %}
