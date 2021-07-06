@@ -3991,7 +3991,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   display: inline-block;
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 768px) {
 .breadcrumb > li {
   display: inline-block;
       width: 320px;
