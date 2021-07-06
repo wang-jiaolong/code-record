@@ -33,7 +33,7 @@ header: Posts By Category
         <div class="wrapper">
           <div class="home">
 			{% for category in site.categories %} 
-			  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+			  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2><span style="color: #999999;" >({{ site.categories[category].size }})</span>
 			  <ul style="padding-left: 0px;">
 			    {% assign pages_list = category[1] %}  
 			    {% include LessOrMore/pages_list %}
