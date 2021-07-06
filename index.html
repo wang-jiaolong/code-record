@@ -52,7 +52,7 @@ layout: default
 
                   {% if forloop.first %}
                     <h1 id="year_{{this_year}}">{{this_year}}</h1>
-                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h2>
+                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}<span style="color: #929191;font-size: 25px">({{ this_month[1].size }})</span></h2>
                     <ul style="padding-left: 0px;">
                   {% endif %}
 
