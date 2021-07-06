@@ -23,9 +23,6 @@ github_username: wang-jiaolong
 markdown: kramdown
 kramdown:
   syntax_highlighter: coderay
-  syntax_highlighter_opts:
-    line_numbers: table
-    bold_every: 5
 
 baidu_analysis: d36219c5c805aadf9278ada56fa7116d
 
