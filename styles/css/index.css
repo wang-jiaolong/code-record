@@ -3990,6 +3990,17 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .breadcrumb > li {
   display: inline-block;
 }
+
+@media (min-width: 768px) {
+.breadcrumb > li {
+  display: inline-block;
+      width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
+
 .breadcrumb > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
