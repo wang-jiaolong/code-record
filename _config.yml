@@ -21,8 +21,6 @@ github_username: wang-jiaolong
 
 # Build settings
 markdown: kramdown
-kramdown:
-  syntax_highlighter: coderay
 
 baidu_analysis: d36219c5c805aadf9278ada56fa7116d
 
