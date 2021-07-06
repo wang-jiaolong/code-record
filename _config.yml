@@ -22,13 +22,10 @@ github_username: wang-jiaolong
 # Build settings
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter: coderay
   syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+    line_numbers: table
+    bold_every: 5
 
 baidu_analysis: d36219c5c805aadf9278ada56fa7116d
 
