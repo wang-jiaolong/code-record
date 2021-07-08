@@ -14,13 +14,13 @@ layout: default
             <header class="post-header">
 
                       {% if page.type == 'easy' %}
-<h1 class="post-title">{{ page.title }}<span style="color: rgb(224 161 0);font-size: 20px">{{ page.type }}</span></h1>
+<h1 class="post-title">{{ page.title }}<span style="color: rgb(224 161 0);font-size: 20px;padding-left: 15px;">[{{ page.type }}]</span></h1>
 
 {% elsif page.type == 'medium' %}
-<h1 class="post-title">{{ page.title }}<span style="color: #00AF9B;font-size: 20px">{{ page.type }}</span></h1>
+<h1 class="post-title">{{ page.title }}<span style="color: #00AF9B;font-size: 20px;padding-left: 15px;">[{{ page.type }}]</span></h1>
      
          {% elsif page.type == 'hard; %}
-<h1 class="post-title">{{ page.title }}<span style="color: #FF2D55;font-size: 20px">{{ page.type }}</span></h1>
+<h1 class="post-title">{{ page.title }}<span style="color: #FF2D55;font-size: 20px;padding-left: 15px;">[{{ page.type }}]</span></h1>
         {% else %}
         <h1 class="post-title">{{ page.title }}</h1>
         {% endif %}
