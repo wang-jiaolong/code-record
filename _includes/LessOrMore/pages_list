@@ -14,7 +14,7 @@
         <li><a href="{{ node.url | prepend: site.baseurl }}" style="color: #00AF9B;">{{ node.title }}</a></li>
         {% elsif node.type == 'medium' %}
         <li><a href="{{ node.url | prepend: site.baseurl }}" style="color: rgb(224 161 0)">{{ node.title }}</a></li>
-         {% elsif node.type == 'hard; %}
+         {% elsif node.type == 'hard' %}
         <li><a href="{{ node.url | prepend: site.baseurl }}" style="color: #FF2D55;">{{ node.title }}</a></li>
         {% else %}
         <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
