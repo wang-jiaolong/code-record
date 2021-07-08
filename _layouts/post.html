@@ -13,13 +13,13 @@ layout: default
         <div class="wrapper">
             <header class="post-header">
 
-                      {% if node.type == 'easy' %}
+                      {% if page.type == 'easy' %}
 <h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
 
-{% elsif node.type == 'medium' %}
+{% elsif page.type == 'medium' %}
 <h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
      
-         {% elsif node.type == 'hard; %}
+         {% elsif page.type == 'hard; %}
 <h1 class="post-title">{{ page.title }}<span style="color: #FF2D55;">{{ page.type }}</span></h1>
         {% else %}
         <h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
