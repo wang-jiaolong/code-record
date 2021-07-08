@@ -4,21 +4,21 @@
     	{% if page.url == node.url %}
     	<ol class="breadcrumb">
     		<li class="active">
-        {% if node.type == 'easy' %}
-        <a href="{{ node.url | prepend: site.baseurl }}" class="active" style="color: rgb(224 161 0);"></a>
-        {% elsif node.type == 'medium' %}
-        <a href="{{ node.url | prepend: site.baseurl }}" class="active" style="color: #00AF9B;">{{ node.title }}</a>
-         {% elsif node.type == 'hard; %}
-        <a href="{{ node.url | prepend: site.baseurl }}" class="active" style="color: #FF2D55;">{{ node.title }}</a>
-        {% else %}
          <a href="{{ node.url | prepend: site.baseurl }}" class="active">{{ node.title }}</a>
-        {% endif %}
         </li>
     		<li style="float:right;"><span>{{ node.date | date: "%F" }}</span></li>
     	</ol>
     	{% else %}
     	<ol class="breadcrumb">
-    		<li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}aaaa</a></li>
+              {% if node.type == 'easy' %}
+        <li><a href="{{ node.url | prepend: site.baseurl }}" style="color: #00AF9B;">{{ node.title }}</a></li>
+        {% elsif node.type == 'medium' %}
+        <li><a href="{{ node.url | prepend: site.baseurl }}" style="color: rgb(224 161 0)">{{ node.title }}</a></li>
+         {% elsif node.type == 'hard; %}
+        <li><a href="{{ node.url | prepend: site.baseurl }}" style="color: #FF2D55;">{{ node.title }}</a></li>
+        {% else %}
+        <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+        {% endif %}
     		<li style="float:right;"><span>{{ node.date | date: "%F" }}</span></li>
     	</ol>
     	{% endif %}
