@@ -12,7 +12,20 @@ layout: default
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
-              <h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
+
+                      {% if node.type == 'easy' %}
+<h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
+
+{% elsif node.type == 'medium' %}
+<h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
+     
+         {% elsif node.type == 'hard; %}
+<h1 class="post-title">{{ page.title }}<span style="color: #FF2D55;">{{ page.type }}</span></h1>
+        {% else %}
+        <h1 class="post-title">{{ page.title }}<span>{{ page.type }}</span></h1>
+        {% endif %}
+
+
               <!--
                 <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
               -->
