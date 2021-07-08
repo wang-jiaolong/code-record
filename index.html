@@ -57,7 +57,18 @@ layout: default
                   {% endif %}
 
                   <ol class="breadcrumb">
+                     {% if post.type == 'easy' %}
+                      <li><span>{{ post.date | date: "%Y/%m/%d"}}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}" style="padding-left: 10px; color: #00AF9B;">{{ post.title }}</a></li>
+
+        {% elsif post.type == 'medium' %}
+                        <li><span>{{ post.date | date: "%Y/%m/%d"}}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}" style="padding-left: 10px; color: rgb(224 161 0);">{{ post.title }}</a></li>
+
+         {% elsif post.type == 'hard; %}
+                <li><span>{{ post.date | date: "%Y/%m/%d"}}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}" style="padding-left: 10px;color: #FF2D55;">{{ post.title }}</a></li>
+
+        {% else %}
                    <li><span>{{ post.date | date: "%Y/%m/%d"}}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}" style="padding-left: 10px;">{{ post.title }}</a></li>
+        {% endif %}
                   </ol>
                   {% if forloop.last %}
                     </ul>
