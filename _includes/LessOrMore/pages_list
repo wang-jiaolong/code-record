@@ -14,7 +14,7 @@
          {% elsif node.type == 'hard; %}
         <a href="{{ node.url | prepend: site.baseurl }}" class="active" style="color: #FF2D55;">{{ node.title }}</a>
         {% else %}
-         <a href="{{ node.url | prepend: site.baseurl }}" class="active">{{ node.title }}</a>
+         <a href="{{ node.url | prepend: site.baseurl }}" class="active" style="color: #FF2D55;">{{ node.title }}</a>
         {% endif %}
         </li>
     		<li style="float:right;"><span>{{ node.date | date: "%F" }}</span></li>
